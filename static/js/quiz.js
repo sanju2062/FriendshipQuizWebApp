@@ -63,6 +63,7 @@ getNewQuestion = ()=>{
 				d.setTime(d.getTime() + (7*24*60*60*1000));
 				let expires = "expires="+ d.toUTCString();
 				document.cookie = "self_id="+getId+";" + expires + ";path=/";
+				sessionStorage.setItem("IdSession",getId);
 				window.location.assign('/link')
 			}
 			, error: function(jqXHR, textStatus, err){
@@ -99,4 +100,3 @@ choices.forEach(choice=>{
 });
 start_game();
 
-sessionStorage.setItem("IdSession",getId);

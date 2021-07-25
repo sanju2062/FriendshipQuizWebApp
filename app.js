@@ -61,13 +61,13 @@ app.use(express.json({limit:'1mb'}));
 app.get('/api/users', function(req, res) {
 	let obj_id = req.query.id;
 	if(typeof obj_id=='undefined'){ 
-		res.status(500).send('error')
+		res.status(500).send('URL Error')
 	}else{
 		Model.find({
 			objid:obj_id
 		},(err,result)=>{
 			if (err) {
-				return res.status(500).send('server error')
+				return res.status(500).send('Internal Server Error\nStatus code 500')
 			}
 			else{
 				let allData = JSON.stringify(result);
@@ -92,7 +92,7 @@ app.post('/api/score',(req,res)=>{
 		}
 	},{returnOriginal:false},(err,result)=>{
 		if (err) {
-			return res.status(500).send('internal server error')
+			return res.status(500).send('Internal Server Error\nStatus code 500')
 		}
 		else{
 			let modifiedData = JSON.stringify(result);
@@ -108,7 +108,7 @@ app.get('/score',(req,res)=>{
 		objid:obj_id
 	},(err,result)=>{
 		if (err) {
-			return res.status(500).send('server error')
+			return res.status(500).send('Internal Server Error\nStatus code 500')
 		}
 		else{
 			let score = result[0].score;
@@ -121,7 +121,7 @@ app.get('/score',(req,res)=>{
 
 app.all('*',(req,res,next)=>{
 	res.type('text/plain')
-	res.status(404).send(`Can't find ${req.originalUrl} on the server!`)
+	res.status(404).send(`Can't find ${req.originalUrl} on the server!\nStatus code 404`)
 });
 
 app.listen(port,()=>{
