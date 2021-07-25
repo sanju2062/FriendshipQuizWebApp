@@ -2,10 +2,10 @@ const id = sessionStorage.getItem("IdSession");
 let idcookie = document.getElementById('getId').innerHTML;
 var link_box = document.querySelector(".box");
 if(idcookie!=''){
-    link_box.innerHTML = "https://realfriendshipquiz.herokuapp.com/api/users?id="+idcookie;
+    link_box.innerHTML = "https://realfriendshipquiz.herokuapp.com<br>/api/users?id="+idcookie;
 }
 else{
-    link_box.innerHTML = "https://realfriendshipquiz.herokuapp.com/api/users?id="+id;
+    link_box.innerHTML = "https://realfriendshipquiz.herokuapp.com<br>/api/users?id="+id;
 }
 
 var copyLink = document.getElementById('copy_link_img');
