@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Friendship-quiz</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/index-style.css">
+		link(rel="stylesheet", href="../static/css/scorepage.css")
+		<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale = 1.0">
+	</head>
+	<body>
+		<div id="outDiv">
+			<div class="center">
+				<h1>Real Friendship Quiz</h1>
+				<p class="para">Welcome to Friendship Quiz</p>
+				<p id='para' class="para">Give the answer to see how well you know your friend</p>
+				<label for="name" id="name-label">Enter your name here</label>
+				<input type="text" name="name" id="name">
+				<input type="submit" name="submit-name" id="submit-name" onclick="submit_name()">
+				<p class="para">ScoreBoard</p>
+				<div id="scoreBoard">
+					<table id="scoreTable" border="1px">
+						<thead>
+							<th>Name</th>
+							<th>Score</th>
+						</thead>
+					</table>
+				</div>
+				<div id="steps">
+					<p class="para">Friendship Quiz</p>
+					<ul style="list-style-type:square;margin-left: 25px;">
+						<li class="list-items">Enter Your name.</li>
+						<li class="list-items">Give answers of questions.</li>
+						<li class="list-items">Check your Score.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		div(id='getData')= ans
+		div(id='getId')= iD
+		<script type="text/javascript" language="javascript" src="../static/js/answer_index.js"></script>
+	</body>
+</html>

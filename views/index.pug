@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Friendship-quiz</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale = 1.0">
+		style
+			include ../static/css/index-style.css
+		script
+			include ../static/js/index.js
+	</head>
+	<body>
+		<div id='outDiv'>
+			<div id="center" class="center">
+				<h1>Real Friendship Quiz</h1>
+				<p id="para">Welcome to Friendship Quiz</p>
+				<p id="para">Create your quiz and check whose is know you well</p>
+				<label for="name" id="name-label">Enter your name here</label>
+				<input type="text" name="name" id="name">
+				<input type="submit" name="submit-name" id="submit-name" onclick="submit_name()">
+				<div id="steps">
+					<p id="para">Steps to Make quiz</p>
+					<ul style="list-style-type:square;margin-left: 25px;">
+						<li class="list-items">Enter Your name.</li>
+						<li class="list-items">Select questions and give answers.</li>
+						<li class="list-items">Share link to your friends.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

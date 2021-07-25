@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Friendship-quiz</title>
+		style
+			include ../static/css/answer-style.css
+		<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale = 1.0">
+		<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script> 
+	</head>
+	<body>
+		<div id="outDiv">
+			<div class="center">
+				<h1>Real Friendship Quiz</h1>
+				<p id='para'>Welcome to Friendship Quiz</p>
+				<div>
+					<h1 id="header_name"></h1>
+					<script type="text/javascript">
+						| const name = sessionStorage.getItem("uname");
+						//- | if(null == sessionStorage.getItem("first")){  
+						//- |   location.href = "/api/users"; 
+						//- | }
+						| document.getElementById("header_name").innerHTML = "Hi "+name;
+					</script>
+				</div>
+				<div style="font-size: 20px;" id='simplelabel'></div>
+				<div id='question_label'>Question</div>
+				<div id='question'>What is your favourite color?</div>
+				<div class="choice-container">
+					<p class="choice-prefix">A</p>
+					<p class="choice-text" data-number=1>Choice1</p>
+				</div>
+				<div class="choice-container">
+					<p class="choice-prefix">B</p>
+					<p class="choice-text" data-number=2>Choice2</p>
+				</div>
+				<div class="choice-container">	
+					<p class="choice-prefix">C</p>
+					<p class="choice-text" data-number=3>Choice3</p>
+				</div>
+				<div class="choice-container">	
+					<p class="choice-prefix">D</p>
+					<p class="choice-text" data-number=4>Choice4</p>
+				</div>
+			</div>
+		</div>	
+		<div class='loading-bar'></div>
+		script(src="../static/js/answer.js")
+	</body>
+</html>

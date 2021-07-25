@@ -1,0 +1,29 @@
+#scoreBoard{
+    width: 100%;
+    margin: auto;
+    align-content: center;
+}
+#scoreTable{
+    width: 78%;
+    margin: 10px auto;
+    background-color: #82a155;
+}
+#homeBtn{
+    width: 130px;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 17px;
+    background-color: red;
+    margin: auto;
+    margin-top: 15px;
+    padding: 4px;
+    box-shadow: #555555 2px 2px 2px 2px;
+    cursor: pointer;
+}
+#homeBtn:hover{
+    background-color:#fff2004d;
+}
+#getScoreData{
+    display: none;
+}
