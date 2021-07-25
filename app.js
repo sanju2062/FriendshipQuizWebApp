@@ -95,7 +95,6 @@ app.post('/api/score',(req,res)=>{
 			return res.status(500).send('Internal Server Error\nStatus code 500')
 		}
 		else{
-			let modifiedData = JSON.stringify(result);
 			return res.status(200).send('done')
 		}
 	})
@@ -104,19 +103,25 @@ app.post('/api/score',(req,res)=>{
 
 app.get('/score',(req,res)=>{
 	let obj_id = req.query.id;
-	Model.find({
-		objid:obj_id
-	},(err,result)=>{
-		if (err) {
-			return res.status(500).send('Internal Server Error\nStatus code 500')
-		}
-		else{
-			let score = result[0].score;
-			let scoreData = JSON.stringify(score);
-			return res.status(200).render('scorepage.pug',{scores:scoreData})
-		}
-	})
-	// res.status(200).render('scorepage.pug')
+	if(typeof obj_id=='undefined'){ 
+		res.status(500).send('URL Error')
+	}else{
+		Model.find({
+			objid:obj_id
+		},(err,result)=>{
+			if (err) {
+				return res.status(500).send('Internal Server Error\nStatus code 500')
+			}
+			else{
+				if(typeof result=='undefined'){
+					return res.status(500).send('Internal Server Error\nStatus code 500');
+				}
+				let score = result[0].score;
+				let scoreData = JSON.stringify(score);
+				return res.status(200).render('scorepage.pug',{scores:scoreData})
+			}
+		})
+	}
 })
 
 app.all('*',(req,res,next)=>{
