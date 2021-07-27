@@ -1,9 +1,12 @@
 .box{
-    border: 2px solid black;
+    border: 1px solid black;
     text-decoration: underline;
     cursor: pointer;
     text-align: center;
     color: rgba(29, 47, 134, 1);
+    width: 88%;
+    height: 56px;
+    background-color: grey;
 }
 #links{
     display: flex;

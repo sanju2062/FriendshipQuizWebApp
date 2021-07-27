@@ -1,16 +1,16 @@
 #question_label{
-	width: 87px;
-    float: left;
+	/* width: 87px;
+    float: left; */
     background-color: #0F5598;
     margin: 21px 22px -1px 11px;
     font-size: 23px;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 #question {
     font-size: 33px;
     color: #fff274;
     background-color: #0f5598;
-    border-radius: 18px;
+    border-radius: 10px;
 }
 .choice-container{
 	display: flex;
