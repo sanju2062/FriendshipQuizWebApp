@@ -10,16 +10,15 @@ else{
 
 var copyLink = document.getElementById('copy_link_img');
 copyLink.addEventListener('click',e=>{
-    window.getSelection().selectAllChildren(link_box);
+    document.getElementById('link_box').select();
     document.execCommand('copy');
     alert('Link copied')
 });
 
 var shareLink = document.getElementById('share_link_img');
 shareLink.addEventListener('click',e=>{
-    console.log(link_box.innerHTML);
     window.open(
-        "whatsapp://send?text=" + link_box.innerHTML.value,
+        "whatsapp://send?text=" + link_box.innerHTML,
         // open in a new window.
         '_blank' 
     );
