@@ -21,28 +21,74 @@ var Name = username.UserName;
 
 let questions = [
 	{
-		question: `What is your favourite color?`,
-		question1: `What is ${Name}'s favourite color?`,
-		choice1: 'Red', 
+		question: "What is your favourite color?",
+		choice1: 'Red',
 		choice2: 'Blue',
 		choice3: 'Black',
-		choice4: 'Pink' 
+		choice4: 'Pink'
 	},
 	{
-		question: `What is your favourite drink?`,
-		question1: `What is ${Name}'s favourite drink?`,
-		choice1: 'Tea',
-		choice2: 'Coffee',
-		choice3: 'ColdDrink',
-		choice4: 'NimbooPani'
+		question: "Which app do you use most often?",
+		choice1: 'WhatsApp',
+		choice2: 'Facebook',
+		choice3: 'YouTube',
+		choice4: 'Instagram'
 	},
 	{
-		question: `What you like?`,
-		question1: `What ${Name} like?`,
-		choice1: 'summer',
-		choice2: 'winter',
-		choice3: 'Rain',
-		choice4: 'snow'
+		question: "What you like?",
+		choice1: 'Summer',
+		choice2: 'Winter',
+		choice3: 'Autumn',
+		choice4: 'Spring'
+	},
+	{
+		question:" Which do you spend more money for?",
+		choice1: 'Shopping',
+		choice2: 'Food',
+		choice3: 'Jewelry',
+		choice4: 'Travel'
+	},
+	{
+		question:"With whom do you like to spend your time?",
+		choice1: 'Alone',
+		choice2: 'Family',
+		choice3: 'Friends',
+		choice4: 'Love'
+	},
+	{
+		question:"What is your favourite taste?",
+		choice1: 'Salty',
+		choice2: 'Sour',
+		choice3: 'Sweet',
+		choice4: 'Spicy'
+	},
+	{
+		question:"What is your favourite movie genre?",
+		choice1: 'Comedy',
+		choice2: 'Horror',
+		choice3: 'Romantic',
+		choice4: 'Sci-Fiction'
+	},
+	{
+		question:"You can't live without ...?",
+		choice1: 'Food',
+		choice2: 'Love',
+		choice3: 'Mobile',
+		choice4: 'Money'
+	},
+	{
+		question:"What age do you wish you could permanetly be?",
+		choice1: 'Childhood',
+		choice2: 'Early Adulthood',
+		choice3: 'Maturehood',
+		choice4: 'Teenager'
+	},
+	{
+		question:"What is your favourite fast food?",
+		choice1: 'Momos',
+		choice2: 'Burger',
+		choice3: 'Noodles',
+		choice4: 'Tikki'
 	}
 ]
 
