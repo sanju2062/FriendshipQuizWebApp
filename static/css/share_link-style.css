@@ -6,7 +6,8 @@
     color: rgba(29, 47, 134, 1);
     width: 88%;
     height: 56px;
-    background-color: grey;
+    background-color: #65ecd1;
+    padding: 4px;
 }
 #links{
     display: flex;

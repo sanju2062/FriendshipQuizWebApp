@@ -22,6 +22,7 @@ var Name = username.UserName;
 let questions = [
 	{
 		question: "What is your favourite color?",
+		question1: `What is ${Name}'s favourite color?`,
 		choice1: 'Red',
 		choice2: 'Blue',
 		choice3: 'Black',
@@ -29,6 +30,7 @@ let questions = [
 	},
 	{
 		question: "Which app do you use most often?",
+		question1: `Which app do ${Name} use most often?`,
 		choice1: 'WhatsApp',
 		choice2: 'Facebook',
 		choice3: 'YouTube',
@@ -36,6 +38,7 @@ let questions = [
 	},
 	{
 		question: "What you like?",
+		question1: `What ${Name} like?`,
 		choice1: 'Summer',
 		choice2: 'Winter',
 		choice3: 'Autumn',
@@ -43,6 +46,7 @@ let questions = [
 	},
 	{
 		question:" Which do you spend more money for?",
+		question1:`Which do ${Name} spend more money for?`,
 		choice1: 'Shopping',
 		choice2: 'Food',
 		choice3: 'Jewelry',
@@ -50,6 +54,7 @@ let questions = [
 	},
 	{
 		question:"With whom do you like to spend your time?",
+		question1:`With whom do ${Name} like to spend your time?`,
 		choice1: 'Alone',
 		choice2: 'Family',
 		choice3: 'Friends',
@@ -57,6 +62,7 @@ let questions = [
 	},
 	{
 		question:"What is your favourite taste?",
+		question1:`What is ${Name}'s favourite taste?`,
 		choice1: 'Salty',
 		choice2: 'Sour',
 		choice3: 'Sweet',
@@ -64,6 +70,7 @@ let questions = [
 	},
 	{
 		question:"What is your favourite movie genre?",
+		question1:`What is ${Name}'s favourite movie genre?`,
 		choice1: 'Comedy',
 		choice2: 'Horror',
 		choice3: 'Romantic',
@@ -71,6 +78,7 @@ let questions = [
 	},
 	{
 		question:"You can't live without ...?",
+		question1:`${Name} can't live without ...?`,
 		choice1: 'Food',
 		choice2: 'Love',
 		choice3: 'Mobile',
@@ -78,6 +86,7 @@ let questions = [
 	},
 	{
 		question:"What age do you wish you could permanetly be?",
+		question1:`What age do ${Name} wish that they could permanetly be?`,
 		choice1: 'Childhood',
 		choice2: 'Early Adulthood',
 		choice3: 'Maturehood',
@@ -85,6 +94,7 @@ let questions = [
 	},
 	{
 		question:"What is your favourite fast food?",
+		question1:`What is ${Name}'s favourite fast food?`,
 		choice1: 'Momos',
 		choice2: 'Burger',
 		choice3: 'Noodles',

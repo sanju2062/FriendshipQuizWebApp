@@ -149,4 +149,3 @@ choices.forEach(choice=>{
 	});
 });
 start_game();
-

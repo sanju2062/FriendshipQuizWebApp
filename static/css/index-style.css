@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 *{
 	margin: 0px 0px;
 	padding: 0px 0px;
 	box-sizing: border-box;
-	font-family: 'Alegreya', serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 body{
 	background-color: #555555;
@@ -21,13 +22,16 @@ body{
 	margin: auto;
 	text-align: center;
 	align-items:center;
-	background-color: #ff52ac;
+	background-color: #d5f368;
 	flex-wrap: wrap;
 	border-radius:10px;
 }
 h1{
-	font-family: 'Itim', cursive;
-	font-size: 35px;
+	padding: 10px;
+    border-radius: 8px;
+    font-family: 'Itim', cursive;
+    font-size: 35px;
+    background-color: #eefbc0;
 }
 #para,.para{
 	font-size: 25px;
@@ -37,7 +41,7 @@ h1{
 #name-label{
 	font-size: 25px;
 	padding: 10px 10px;
-	color: #aaff88;
+	color: #1a068d;
 }
 #name{
 	height: 27px;
@@ -51,15 +55,47 @@ h1{
 #submit-name{
 	height: 35px;
 	width: 100px;
-	background-color: #5557a1;
+	background-color: #6a6edf;
 	margin: 13px auto;
 	border-radius: 7px;
+	cursor: pointer;
+}
+#submit-name:hover{
+    background-color: #aaade9;
+}
+#submit-name:active{
+	color: white;
+	background-color: #131314;
 }
 .list-items{
 	font-size: 20px;
-	color: #aaff88;
+	color: #f82d12;
 	text-align: left;
 }
 #getData,#getId{
 	display: none;
+}
+#contact{
+	margin-top: 16px;
+	margin-bottom: 10px;
+}
+#contact a{
+	background-color: #ff8787;
+    border: 1px solid #242522;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-top: 10px;
+    text-decoration: none;
+    box-shadow: #242522 3px 2px 2px 1px;
+}
+#contact a:hover{
+    background-color: #f8c5b7;
+}
+#contact a:active{
+	color: white;
+	background-color: #9c0303;
+}
+hr{
+	color: black;
+	width: 312px;
 }
