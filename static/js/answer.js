@@ -80,6 +80,7 @@ getNewQuestion = ()=>{
 				window.location.assign(assignLink);
 			}
 			, error: function(jqXHR, textStatus, err){
+				document.body.className = "";
 				alert(textStatus+":"+err);
 			}
 		})

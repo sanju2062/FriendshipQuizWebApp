@@ -67,6 +67,7 @@ getNewQuestion = ()=>{
 				window.location.assign('/link')
 			}
 			, error: function(jqXHR, textStatus, err){
+				document.body.className = "";
 				alert(textStatus+":"+err)
 			}
 		 })
