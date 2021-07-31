@@ -1,3 +1,5 @@
+const Id = document.getElementById('getId').innerHTML;
+
 function submit_name(){
 	const name = document.getElementById("name");
 	if (name.value=='') {
@@ -5,11 +7,11 @@ function submit_name(){
 		return 
 	}
 	sessionStorage.setItem("uname", name.value);
-	return window.location.assign("/api/quiz")
+	return window.location.assign("/api/quiz?id="+Id)
 }
 
 const data = document.getElementById('getData').innerHTML;
-const Id = document.getElementById('getId').innerHTML;
+
 
 sessionStorage.setItem('allData',data);
 sessionStorage.setItem('oId',Id);

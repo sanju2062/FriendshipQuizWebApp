@@ -1,7 +1,8 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const name1 = sessionStorage.getItem("uname");
-const Id = sessionStorage.getItem("oId");
+const Id = document.getElementById('iD').innerHTML;
+const Qdata = sessionStorage.getItem('allData')
 
 let currentQuestion = {};
 let acceptionAnswers = true;
@@ -11,7 +12,14 @@ let availableQuestions = [];
 let Answers = [];
 let correct_answers;
 
-const Qdata = sessionStorage.getItem('allData')
+if(window.sessionStorage){
+	if(name1=='undefined'||name1==null||Qdata=='undefined'||Qdata=='[]'){
+		window.location.assign('/api/users?id='+Id)
+	}
+}else{
+	alert('Browser not support this website');
+}
+
 let answers = JSON.parse(Qdata)
 var username = answers[0].Data.pop();
 for(let i=0;i<answers[0].Data.length;i++){

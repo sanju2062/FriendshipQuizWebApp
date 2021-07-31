@@ -42,7 +42,7 @@ app.post('/api',(req,res)=>{
 	newModel.save(function(err){
 		if(err){
 			console.log('Database Error')
-			return res.status(500).send('internal server error')
+			return res.status(404).send('internal server error')
 		}else{
 			console.log('data saved')
 			return res.status(200).send('done')
@@ -78,7 +78,8 @@ app.get('/api/users', function(req, res) {
 });
 
 app.get('/api/quiz',(req,res)=>{
-	res.status(200).render('answer.pug')
+	let obj_id = req.query.id;
+	res.status(200).render('answer.pug',{iD:obj_id});
 })
 
 app.post('/api/score',(req,res)=>{
