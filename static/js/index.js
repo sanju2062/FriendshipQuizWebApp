@@ -1,7 +1,8 @@
 if(typeof(Storage)=="undefined"){
     alert('your browser not support this website');
-    
+
 }
+alert(typeof(Storage));
 
 function submit_name(){
 	const name = document.getElementById("name");
