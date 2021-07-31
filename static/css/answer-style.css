@@ -135,3 +135,6 @@ body.loading{
 body.loading .loading-bar{
 	display: block;
 }
+#iD{
+	display: none;
+}
