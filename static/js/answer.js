@@ -12,7 +12,7 @@ let availableQuestions = [];
 let Answers = [];
 let correct_answers;
 
-if(window.sessionStorage){
+if(typeof(Storage)!='undefined'){
 	if(name1=='undefined'||name1==null||Qdata=='undefined'||Qdata=='[]'){
 		window.location.assign('/api/users?id='+Id)
 	}

@@ -1,3 +1,8 @@
+if(typeof(Storage)=="undefined"){
+    alert('your browser not support this website');
+    
+}
+
 function submit_name(){
 	const name = document.getElementById("name");
 	sessionStorage.setItem("first", name.value);
